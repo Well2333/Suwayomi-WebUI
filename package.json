@@ -22,14 +22,10 @@
     "i18n:gen-resources": "tsx tools/scripts/weblate/generatei18nResources.ts",
     "dayjs:gen-locales-array": "tsx tools/scripts/dayjs/generateDayJsLocales.ts",
     "dayjs:gen-locales-import": "tsx tools/scripts/dayjs/generateDayJsLocalesImport.ts",
-    "dayjs:gen-locales": "yarn dayjs:gen-locales-array && yarn dayjs:gen-locales-import",
-    "prepare": "husky"
+    "dayjs:gen-locales": "yarn dayjs:gen-locales-array && yarn dayjs:gen-locales-import"
   },
   "engines": {
     "node": "22.12.0"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx}": "eslint --fix"
   },
   "dependencies": {
     "@apollo/client": "3.13.8",
@@ -112,8 +108,6 @@
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "4.6.2",
     "eslint-plugin-unused-imports": "3.2.0",
-    "husky": "9.1.7",
-    "lint-staged": "15.5.1",
     "prettier": "3.5.3",
     "syncyarnlock": "1.0.19",
     "terser": "5.39.0",
